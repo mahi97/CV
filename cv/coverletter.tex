@@ -1,0 +1,157 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=0.9cm, top=.7cm, right=0.9cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{pic}
+\name{Mohammad Mahdi}{Rahimi}
+\position{Software Engineer{\enskip\cdotp\enskip}AI Expert}
+
+\mobile{(+98) 912-110-9109}
+\email{mmrahimi@aut.ac.ir}
+%\homepage{www.posquit0.com}
+\github{mahi97}
+\linkedin{mahi97}
+\gitlab{mohammadmahdi76}
+\stackoverflow{3042603}{Mahi}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+%\recipient
+%  {to the kind attention of ACAI-2019/HAISS-2019 Local Committee}
+%  {The 2019 Advanced Course on AI / Hellenic Artificial Intelligence Summer School}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+%\lettertitle{Letter of Motivation for ACAI-2019/HAISS-2019}
+% How the letter is opened
+% \letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Letter of Motivation}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mohammad Mahdi Rahimi~~~·~~~Statement of Interest}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+\lettersection{About Me}
+I am an undergraduate student pursuing forth year in \textbf{Software Engineering} at \textbf{Amirkabir University of Technology (Tehran Polytechnic)}, the number one technical university in Iran. In consideration of my interests in robotics and programming since my younger days, I tried to be a specialist in \textbf{Robotics} and \textbf{Artificial Intelligence} and mostly on  \textbf{Multi-Agent Systems}, \textbf{Simulations} and \textbf{Machine Learning}. I've planned to continue my studies and research in \textbf{Multi-Agent Deep Reinforcement Learning}.
+
+\lettersection{My Background}
+I always had a passion to know how multi-agent systems and societies should work. This hunger had led me to choose \textbf{Soccer Robots} as my research field since it's a best practice for multi-agents, cooperative and competitive systems.
+I've participated in so many competitions and done a lot of projects in this area.
+
+\textbf{RoboCup Junior Soccer.} This was a complete autonomous soccer game with two robots for each team, the most significant and unique work was the communication between two robots and role switching that led to the championship of national and international competition. (As a high school student)
+
+\textbf{RoboCup Small Size League.} A \textbf{vision-guided multi-agent soccer robots} with 8 robot for each team in 9x12 meter field. At first I designed and developed a graphical planner for soccer robots so without any coding, anyone can design a soccer strategy for robots and execute it - 
+\href{http://github.com/ParsianRoboticLab/ssl-visual-planner}{\textcolor{blue}{\textbf{Github Page of ssl-visual-planner}}}-. Soon after, I did other projects such as \textbf{online auto-calibration of pass speeds}, \textbf{game-logs analysis}, \textbf{predict flying ball}, \textbf{obstacle avoidance using visibility graphs} and finally \textbf{multi-agent robots re-planning} for attack strategies using reinforcement learning - 
+\href{https://www.youtube.com/watch?v=SfxZtV8uzFQ}{\textcolor{blue}{\textbf{here is the "Parsian's" qualification video for RoboCup 2018, showing learning procedure for free-kicks}}}-.
+After Three years I re-based Parsian Soccer Robots Project to \textbf{ROS (Robotic Operating System) Framework} as a multi-agent and distributed architecture system that make enormously increase in the performance and better management on development, and currently I'm the maintainer of \textbf{Grsim} the \textbf{official simulator for SSL} that originally developed in \textbf{Parsian Robotics Laboratory}.
+
+\textbf{Russian AI Challenge 2019.} 3-player multi-agent soccer game in 3D simulation, I've reached the final stage with rank 38 between 700 teams.
+
+\textbf{Sharif AI Challenge 2018-2019.} A Strategic games with 4 heroes for each team, we reached to top 4 at the final stage and our main approach was finding \textbf{Nash-equilibrium} by using \textbf{Monte-Carlo Search} to attack and \textbf{Backward-Induction} with \textbf{Double-Oracles} for defending. 
+
+\textbf{ZJU AI Challenge 2018.} \href{https://tianchi.aliyun.com/competition/rankingList.htm?spm=5176.100067.5678.4.3c934bddlu2Aga&raceId=231677}{\textcolor{blue}{\textbf{Zero-shot Learning Picture Recognition}}}, on behalf of "\textbf{Parsian}". We achieved \textbf{14} rank out of \textbf{3224} teams, our main approach for this competition was usage of \textbf{Generative Adversarial Networks}.
+
+I have also been a part of the technical committee of different international competition on soccer agents such as 
+\newline
+\begin{itemize}
+    \item \textbf{AIWorldCup, South Korea, KAIST, 2018.}
+    \item \textbf{AUTCup, Iran, Tehran Polytechnic, 2016-2019}
+    \item \textbf{IranOpen, Iran, QAIU, 2017-2019}
+    \item \textbf{Asia-pacific RoboCup, Iran, RoboCup, 2018}
+\end{itemize}
+
+
+\lettersection{Why This Position?}
+Throughout the last four years of my life, I have chosen to work on AI and its application and in the recent year, my researches have been focused on Machine learning and Multi-Agent Systems. 
+
+Since I entered university I had so many ethical questions and struggle with myself, as a student of technical university we have only one course on ethics and we can choose between \textbf{Ethics in Engineering}, \textbf{Philosophy of Ethics}, and \textbf{Humanity in Islam}, but I participated in all three courses, and also I participated in \textbf{Philosophy of Science} and \textbf{Philosophy of Ethics} in \textbf{Tehran University} which is the best university at \textbf{Philosophy and the Human Sciences} in Iran. This classes and courses make me more certain about what I want to do in my life and my life goals. I find a very close relationship between the concepts of \textbf{Kant's Philosophy and Nash Equilibrium} and a strong passion to find a better solution for AI systems through the philosophy and ethics and find a better ethical philosophy through simulation of problems on multi-agent systems.
+
+Currently, I'm working on my undergraduate thesis based on papers from \textbf{OpenAI} and \textbf{BEAR Laboratory} (Berkeley) on \textbf{Multi-Agent Deep Reinforcement Learning}.
+I am very excited about the kind of learning opportunities and exposure that I would get working under your world-class environment. This school will also serve as an important stepping stone for my PhD in this field which I wish to pursue upon graduation.
+\newline
+\newline
+\newline
+\newline
+I would be very thankful if you consider my application. I’ll be more than happy to provide any further information or documents if required for your kind perusal.
+Looking forward to your favorable reply.
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}
