@@ -637,6 +637,20 @@
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
+% Define an environment for cvinterest
+\newenvironment{cvinterests}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+  \begin{center}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l L{\textwidth * \real{0.9}}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
+
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \vspace{-4.0mm}
