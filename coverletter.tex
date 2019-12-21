@@ -1,0 +1,170 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=0.9cm, top=.7cm, right=0.9cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{pic}
+\name{Mohammad Mahdi}{Rahimi}
+
+\mobile{(+98) 912-110-9109}
+\email{mmrahimi@aut.ac.ir}
+%\homepage{www.posquit0.com}
+\github{mahi97}
+\linkedin{mahi97}
+\gitlab{mohammadmahdi76}
+\stackoverflow{3042603}{Mahi}
+% \reddit{reddit-id}
+% \extrainfo{extra informations}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {to the kind attention of KAIST International Graduate Admission Team}
+  {Korean Advanced Institute of Science and Technology}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+%\lettertitle{Letter of Motivation for ACAI-2019/HAISS-2019}
+% How the letter is opened
+% \letteropening{Dear Mr./Ms./Dr. LastName,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+% \letterenclosure[Attached]{Letter of Motivation}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mohammad Mahdi Rahimi~~~·~~~Statement of Purpose}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+\lettersection{About Me}
+I entered the \textbf{Amirkabir University of Technology}, one of the three technical university in Iran, at the age of \textbf{Sixteen} as a \textbf{talented student} without taking the national exam. Soon after, I joined \textbf{Parsian Robotic Lab.} and start working beside master students on \textbf{Multi-Agent Vision-Guided Soccer Robots} as a software developer. After two years, I became the head of the software team in the laboratory as the youngest member and one year after I was responsible as the team leader.
+In the time that I was a member of the laboratory, Parsian Team moved from top 16 to \textbf{top 4} teams of the International \textbf{RoboCup} Competitions.
+
+I'm currently working on the \textbf{Business Intelligence \& Big Data} projects of \textbf{MCI Telecommunication}, the largest Telecom company in the middle-east. This project involves International companies like \textbf{Ericsson}(\textit{Sweden}), \textbf{Huawei}(\textit{China}), \textbf{Intellica}(\textit{Turkey}) and \textbf{BrTech}(\textit{Iran}). My role is to built and deploy ELT process packages, develop and operate a \textbf{distributed} \textbf{log analyzer} on \textbf{ELK Stack} with help of BigData technologies. I currently working on \textbf{Anomaly Detection} for operational and business data.
+
+I have experience of working with \textbf{world-class} problems and, my career focused on research and development of \textbf{BigData Stream Processing}, \textbf{Distributed and Multi-Agents Systems} and \textbf{Machine Learning} . I have more than \textbf{ten years} of experience in \textbf{C/C++ programming} and, using \textbf{Python} and \textbf{Bash} scripting as everyday tools for \textbf{Robotics} and \textbf{AI} projects.
+
+Being in \textbf{Parsian Robotics Lab} and \textbf{leading the team} not only raised my \textbf{technical skills} but also, improved my \textbf{teamwork} and \textbf{management} skills. Furthermore, It gave the opportunity of writing \textbf{technical papers} and participating in \textbf{international competitions} which enhanced my \textbf{writing} and \textbf{presenting} abilities.
+
+
+\lettersection{My Background \& Projects}
+
+
+\textbf{RoboCup Junior Soccer.} \newline
+This was a complete autonomous soccer game with two robots for each team, the most significant and unique work was the communication between two robots and role switching that led to the championship of national and international competition. (As a high school student)
+
+\textbf{RoboCup Small Size League.} \newline
+A \textbf{vision-guided multi-agent soccer robots} with 8 robot for each team in 9x12 meter field. At first I designed and developed a graphical planner for soccer robots so without any coding, anyone can design a soccer strategy for robots and execute it - 
+\href{http://github.com/ParsianRoboticLab/ssl-visual-planner}{\textcolor{blue}{\textbf{Github Page of ssl-visual-planner}}}-. Soon after, I did other projects such as \textbf{online auto-calibration of pass speeds}, \textbf{game-logs analysis}, \textbf{predict flying ball}, \textbf{obstacle avoidance using visibility graphs} and finally \textbf{multi-agent robots re-planning} for attack strategies using reinforcement learning - 
+\href{https://www.youtube.com/watch?v=SfxZtV8uzFQ}{\textcolor{blue}{\textbf{here is the "Parsian's" qualification video for RoboCup 2018, showing learning procedure for free-kicks}}}-.
+After Three years I re-based Parsian Soccer Robots Project to \textbf{ROS (Robotic Operating System) Framework} as a multi-agent and distributed architecture system that make enormously increase in the performance and better management on development, and currently I'm the maintainer of \textbf{Grsim} the \textbf{official simulator for SSL} that originally developed in \textbf{Parsian Robotics Laboratory}.
+
+\textbf{Russian AI Challenge 2019.} \newline
+3-Player multi-agent soccer game in a 3D simulation, I've reached the final stage with rank 38 between 780 teams. My approach for this competition was fast prediction of ball and other agents for as long as possible to conquer all the opportunities of touching ball faster that others and play a one-sided game to win. 
+
+\textbf{Sharif AI Challenge 2018-2019.} \newline
+A Strategic games with 4 heroes for each team that should decided to attack, defend or move in each step simultaneously. we reached to top 4 at the final stage and our main approach was finding \textbf{Nash-Equilibrium}, so we calculate the attack score by using \textbf{Monte-Carlo Search} and for defending scores we used \textbf{Backward-Induction} with \textbf{Double-Oracles}.
+
+\textbf{ZJU AI Challenge 2018.}
+\href{https://tianchi.aliyun.com/competition/rankingList.htm?spm=5176.100067.5678.4.3c934bddlu2Aga&raceId=231677}{\textcolor{blue}{\textbf{Zero-shot Learning Picture Recognition}}}, \newline
+on behalf of "\textbf{Parsian}". We achieved \textbf{14} rank out of \textbf{3224} teams, our main approach for this competition was usage of \textbf{Generative Adversarial Networks} to generate unseen images by using known features of them and use the given feature vectors of other classes.
+At the end we used many classifier and we found using \textbf{manifold} distance with \textbf{T-SNE} as base classifier give us the best result.
+My job in the team was more focused on last level classifier and manifold distance.
+
+\textbf{Automatic System Health Monitoring by Log Analysis} \newline
+One of the main challenges for huge software systems is monitoring while execution, specially if the system is 24-hour live and many users is using this application.
+BI Project in MCI Telecommunication. is one of this systems and for monitoring this system usually at least five experts is needed to due the monitoring and to cover the monitoring in during day and nights about 20 people is required. my job was to create a system to gather all the log files from all application and servers and convert this unstructured and partially meaningless data to structured and use full information. Next step is to store and index this data and finding the trend and model of each metric.
+The final task is an online application to detect any anomaly in this metrics and report it immediately by means of Email, SMS, ... .
+This was my first R\&D project at MCI that succeeded. This first complete version of this project implemented and deployed only by me. Right now four people are working on development of this system and we don't need to cover any of the monitoring manually.
+
+\lettersection{Why I'm applying for Ph.D?}
+Throughout the last four years of my life, I have chosen to work on AI and its application and in the recent year, my researches have been focused on Machine learning and distributed Systems. 
+
+Since I entered university I had so many ethical questions and struggle with myself, as a student of technical university we have only one course on ethics and we can choose between \textbf{Ethics in Engineering}, \textbf{Philosophy of Ethics}, and \textbf{Humanity in Islam}, but I participated in all three courses, and also I participated in \textbf{Philosophy of Science} and \textbf{Philosophy of Ethics} in \textbf{Tehran University} which is the best university in \textbf{Philosophy and the Human Sciences} in Iran. This classes and courses make me more certain about what I want to do in my life and I find a close relationship between all the concepts \textbf{Ethics} and \textbf{Game Theory} and a strong passion to find the philosophy of living through simulation and solving of problems on multi-agent systems.
+
+I believe the Ph.D program on MARL is the exact opportunity for me to purse my goals and focusing in this area and came up with many solution that can help societies and push forward social behaviors in both human and robots to an efficient way.
+
+\lettersection{Why I'm applying for KAIST?}
+I was invited to KAIST for AI WorldCup competition for two years and each time I come there, I get know this university better and I found it a world-class environment to work and study. On the other hand the papers and works of Prof. Yung Yi in MARL and application of game theory in the analysis of networks was very inspiring to me, so the last time I was there I ask him for a chance to speak more about his work and he give me an opportunity to visit his laboratory and students who work on this subject.
+I can tell not only Prof. Yung works is very close to my interests but also the active working environment and people is what I was looking for that I found it all in the LANADA lab.
+\newline
+\newline
+\newline
+\newline
+I would be thankful toward you for considering my application. I’ll be happy to provide any further information or documents if required for your kind perusal.
+Looking forward to your favorable reply.
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}
