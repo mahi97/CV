@@ -23,3 +23,4 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: cv.tex
+          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode or -lualatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
